@@ -1,8 +1,8 @@
 /**
- * Theme Name: Hybrid Kangaroo
+ * Theme Name: Hybrid Kangaroo Code
  * Theme URI: https://github.com/alanorth/Hybrid-Kangaroo
  * Description: A sleek theme based on Hybrid Original... kanged!
- * Version: 0.4
+ * Version: 0.1
  * Author: Alan Orth
  * Author URI: http://alaninkenya.org
  * Tags: threaded-comments, sticky-post, microformats, two-columns, fixed-width, blue
@@ -35,11 +35,10 @@
 * Body
 ************************************************/
 body {
-	background: #474747 url(images/background.png);
-	color: #fff;
-	font-family: Ubuntu, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
-	text-shadow: black 0px 2px 1px;
-	font-size: 15px;
+	background: #F6F9FC url("images/hash.png") no-repeat fixed right bottom;
+	color: #000;
+	font-family: Cantarell, Ubuntu, Verdana, Arial, sans-serif;
+	font-size: 13px;
 	}
 
 /* Body container */
@@ -55,19 +54,19 @@ body {
 
 /* Links */
 a, a:visited  {
-	color: #aaa;
+	color: #0077BB;
 	text-decoration: none;
 	}
 a:hover, a:active {
-	text-decoration: underline;
+	text-decoration: none;
 	}
 
 /* Headers */
 h2 {
-	font-size: 20px;
+	font-size: 1.5em;
 	}
 h3 {
-	font-size: 18px;
+	font-size: 1.17em;
 	}
 h4 {
 	font-size: 16px;
@@ -79,7 +78,12 @@ h6 {
 	font-size: 12px;
 	}
 h1, h2, h3, h4, h5, h6 {
-	color: #fff;
+	font-weight: 400;
+	line-height: 140%;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+}
 	}
 .sticky h2, .sticky h3, .sticky h4, .sticky h5, .sticky h6 {
 	color: #eee;
@@ -132,21 +136,28 @@ blockquote em {
 
 /* Code */
 code {
-	padding: 0 3px;
-	font-family: "Ubuntu Mono", Courier, mono, serif;
-	color: #aaa;
+	padding: 1px 3px;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	color: #000;
+	line-height: 1.3em;
+	background: none repeat scroll 0 0 #FFFFDD;
 	}
 pre {
 	overflow-x: hidden !important; overflow: hidden !important; position: relative; z-index: 999;
 	display: block;
 	padding: 9px;
-	border: 1px solid #444;
-	background: #1b1b1b;
+	border-left: 2px solid #BBCCDD;
+	background: none repeat scroll 0 0 #ECF2F5;
+	color: #000;
+    margin: 0 10px 10px 10px;
 	}
 pre code {
 	padding: 0;
-	background: transparent;
-	color: #fff;
+	border: 0;
+    font-size: 120%;
+	white-space: pre-wrap;
+	background: none;
 	}
 .sticky pre {
 	background: #246F93;
@@ -206,10 +217,10 @@ td a, th a {
 /* Notes */
 .note {
 	padding: 6px 9px;
-	background: #2b2b2b;
-	border: 1px solid #444;
+	background: none repeat scroll 0 0 #DDFFDD;
+	border: 1px solid #BBDDBB;
 	line-height: 1.2em;
-	font-size: 0.9em;
+/*	font-size: 0.9em;*/
 	margin: 15px auto;
 	text-align: justify;
 	}
@@ -338,6 +349,8 @@ img.wp-smiley {
 #header {
 	display: block;
 	margin-bottom: 18px;
+    height: 40px !important;
+    padding: 10px 15px !important;
 	}
 #site-title {
 	font-size: 2.3em !important;
@@ -346,11 +359,12 @@ img.wp-smiley {
 	}
 #site-title a {
 	color: #5f97b1;
+	color: #000;
 	}
 #site-description {
 	font-size: 1.1em;
 	font-style: italic;
-	color: #eee;
+	color: #000;
 	margin-bottom: 27px;
 	}
 /**
@@ -418,7 +432,6 @@ img.wp-smiley {
 	float: left;
 	width: 600px;
 	padding: 20px;
-	background: url(images/content_background.png);
 	}
 .no-widgets .content, .no-default-widgets .content, .primary-inactive.secondary-inactive .content {
 	width: 920px;
@@ -427,6 +440,10 @@ img.wp-smiley {
 /**
 * Posts
 ************************************************/
+h1.post-title.entry-title {
+	font-size: 150%;
+	margin-bottom: 5px;
+}
 .hentry {
 	clear: both;
 	height: 100%;
@@ -448,12 +465,18 @@ img.wp-smiley {
 	color: #A6C2CF !important;
 	}
 
-.entry-content p a {
-	color: #3C738C;
+.entry-content a {
+	color: #0077BB;
 	}
+.entry-content a:hover {
+	color: #666;
+	text-decoration: underline;
+}
+.entry-content p {
+	text-align: justify;
+}
 .entry-content h2, .entry-content h3 {
-	font-family: 'Comfortaa', serif;
-	font-weight: 200;
+	font-weight: normal;
 	line-height: 140%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -463,10 +486,9 @@ img.wp-smiley {
 /* Post title */
 .entry-title {
 	font-size: 21px;
-	margin-bottom: 3px;
 	}
 .entry-title a {
-	color: #fff;
+	color: #0077BB;
 	}
 .single-post .entry-title, .page-title {
 	font-size: 21px;
@@ -477,19 +499,21 @@ img.wp-smiley {
 
 /* Byline */
 .byline {
-	margin: 0;
+	margin-bottom: 10px;
 	font-size: .85em;
-	font-style: italic;
-	color: #AAA;
+	color: black;
 	}
 .single .byline, .home .byline {
 	margin-bottom: 21px;
 	}
 .sticky .byline {
-	color: #AAA;
+	color: #black;
 	}
 .byline a {
-	color: #3C738C;
+	color: black;
+	border: solid #CCC;
+	border-style: groove;
+	border-width: 0 0 1px 0;
 	}
 
 /* Post meta data */
@@ -498,16 +522,16 @@ img.wp-smiley {
 	display: block;
 	padding: 9px 0 0 0;
 	font-size: .85em;
-	font-style: italic;
-	color: #AAA;
-	border-top: 1px solid #444;
+	color: black;
+	border-top: 1px solid #CCC;
 	}
 .sticky .entry-meta {
-	color: #AAA;
-	border: none;
+	color: black;
 	}
 .entry-meta a {
-	color: #3C738C;
+	color: black;
+	border: groove #CCC;
+	border-width: 0 0 1px 0;
 	}
 
 /* Page links */
@@ -637,7 +661,10 @@ p.page-links a {
 	overflow: hidden;
 	margin: 0 0 21px 0;
 	padding: 18px 15px;
-	background: url(images/content_background.png);
+	background: #181818;
+/*
+	border: groove #CECECE;
+	border-width: 0 0 0 1px;*/
 	}
 .content .widget {
 	margin: 0;
@@ -658,8 +685,8 @@ p.page-links a {
 	font-size: 1.2em;
 	}
 h3.widget-title {
-	font-family: 'Comfortaa';
-	font-weight: 200;
+	font-family: Cantarell, sans-serif;
+	font-weight: normal;
 	line-height: 140%;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -713,7 +740,7 @@ h3.widget-title {
 /* Widget search */
 .widget-search .search-text {
 	width: 230px;
-	font-family: Ubuntu, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
+	font-family: Cantarell, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
 	}
 
 /* Widget categories */
@@ -750,30 +777,23 @@ li.author #reply {
 	list-style: none;
 	margin: 0 0 21px 0;
 	}
+/* 1st-level comment */
 #comments li {
 	overflow: hidden;
 	margin-bottom: 9px;
 	padding: 9px 9px 0 9px;
-	color: #fff;
-	border-bottom: 1px solid #444;
-	background: #1b1b1b;
+	border-left: 5px #08C solid !important;
 	}
+/* 2nd-level comment */
 #comments li li, #comments li.author li li {
-	color: #fff;
 	margin: 0 9px 9px 18px;
-	background: #2b2b2b;
 	}
+/* 3rd-level comment */
 #comments li.author li, #comments li li li, #comments li li.author li, #comments li.author li.author li {
-	color: #fff;
-	background: #3b3b3b;
 	}
 #comments li.author, #comments li li.author, #comments li li li.author, #comments li.author li.author li.author {
-	color: #f7f7f7;
-	background: #232C36;
 	}
 #comments li.author li.author, #comments li li.author li.author, #comments li.author li li.author {
-	color: #f7f7f7;
-	background: #246F93;
 	}
 #comments li li.author, #comments li li.author li.author {
 	border-top: 1px solid #333;
@@ -782,7 +802,6 @@ li.author #reply {
 
 /* Comment links */
 #comments li a, #comments li.author li a, #comments li.author li.author li a {
-	color: #3C738C;
 	} 
 #comments li.author a, #comments li.author li.author a, #comments li.author li.author li.author a {
 	color: #A6C2CF;
@@ -846,10 +865,10 @@ textarea {
 	width: auto;
 	margin-right: 9px;
 	padding: 6px 9px;
-	font: .9em Ubuntu, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
+	font: .9em Cantarell, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
 	font-weight: bold;
-	color: #eee;
-	background: #242D36;
+	color: #fff;
+	background: #333;
 	border: none;
 	}
 li.entry-author .button, li.entry-author #submit {
@@ -889,7 +908,7 @@ li.entry-author .button, li.entry-author #submit {
 	}
 
 span.before {
-	font-family: Ubuntu, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
+	font-family: Cantarell, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
 }
 
 /* Override the weird gallery-item margin from 21px.css */
@@ -897,8 +916,6 @@ dl.gallery-item {
 	margin: 0;
 }
 
-/* disable text-shadow for embedded tweets */
-/* See: http://media.twitter.com/blackbird-pie/ for an example tweet */
-p.bbpTweet {
-	text-shadow: none;
+div.breadcrumb-trail {
+	display: none;
 }

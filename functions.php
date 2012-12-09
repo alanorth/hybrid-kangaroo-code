@@ -11,15 +11,10 @@
  */
 
 function load_fonts() {
-	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Ubuntu+Mono|Ubuntu:400,700,400italic,700italic|Comfortaa');
+	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic|Ubuntu+Mono');
 	wp_enqueue_style( 'googleFonts');
 	}
 
 add_action('wp_print_styles', 'load_fonts');
-
-if (!is_admin()) {
-	// script to enable x-axis expansion of large code blocks on hover
-	wp_enqueue_script('expanding_code_blocks', get_stylesheet_directory_uri() . '/expanding_code_blocks.js', array('jquery'), 1.0, true);
-}
 
 ?>
