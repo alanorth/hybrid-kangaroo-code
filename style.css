@@ -474,6 +474,7 @@ h1.post-title.entry-title {
 }
 .entry-content p {
 	text-align: justify;
+	line-height: 175%;
 }
 .entry-content h2, .entry-content h3 {
 	font-weight: normal;
