@@ -530,7 +530,7 @@ h1.post-title.entry-title {
 	color: black;
 	}
 .entry-meta a {
-	color: black;
+	color: #333;
 	border: groove #CCC;
 	border-width: 0 0 1px 0;
 	}
