@@ -138,7 +138,7 @@ blockquote em {
 /* Code */
 code {
 	padding: 1px 3px;
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: 'Ubuntu Mono', 'Droid Sans Mono', Consolas, Menlo, Monaco, monospace;
 	font-size: 1em;
 	color: #000;
 	line-height: 1.3em;
@@ -686,7 +686,7 @@ p.page-links a {
 	font-size: 1.2em;
 	}
 h3.widget-title {
-	font-family: Cantarell, sans-serif;
+	font-family: Cantarell, Ubuntu, Verdana, Arial, sans-serif;
 	font-weight: normal;
 	line-height: 140%;
 	text-rendering: optimizeLegibility;
@@ -741,7 +741,7 @@ h3.widget-title {
 /* Widget search */
 .widget-search .search-text {
 	width: 230px;
-	font-family: Cantarell, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
+	font-family: Cantarell, Ubuntu, Verdana, Arial, sans-serif;
 	}
 
 /* Widget categories */
@@ -909,7 +909,7 @@ li.entry-author .button, li.entry-author #submit {
 	}
 
 span.before {
-	font-family: Cantarell, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
+	font-family: Cantarell, Ubuntu, Verdana, Arial, sans-serif;
 }
 
 /* Override the weird gallery-item margin from 21px.css */
