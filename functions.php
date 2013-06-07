@@ -10,13 +10,6 @@
  * @subpackage Functions
  */
 
-function load_fonts() {
-	wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic|Ubuntu+Mono');
-	wp_enqueue_style( 'googleFonts');
-	}
-
-add_action('wp_enqueue_scripts', 'load_fonts');
-
 function highlightjs_styles() {
 	wp_enqueue_style( 'core', get_stylesheet_directory_uri() . '/highlight.default.min.css', false );
 }
