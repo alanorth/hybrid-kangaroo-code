@@ -36,7 +36,7 @@
 ************************************************/
 body {
 	background: #F6F9FC url("images/hash.png") no-repeat fixed right bottom;
-	color: #333;
+	color: #444;
 	font: normal 87.5%/1.4 Cantarell, Ubuntu, Verdana, Arial, sans-serif;
 	}
 
@@ -77,7 +77,7 @@ h6 {
 	font-size: 12px;
 	}
 h1, h2, h3, h4, h5, h6 {
-	color: #111;
+	color: #222;
 	font-weight: 400;
 	line-height: 140%;
 	text-rendering: optimizeLegibility;
@@ -358,12 +358,12 @@ img.wp-smiley {
 	line-height: 27px;
 	}
 #site-title a {
-	color: #111;
+	color: #222;
 	}
 #site-description {
 	font-size: 1.1em;
 	font-style: italic;
-	color: #333;
+	color: #444;
 	margin-bottom: 27px;
 	}
 /**
@@ -488,7 +488,7 @@ h1.post-title.entry-title {
 	font-size: 21px;
 	}
 .entry-title a {
-	color: #111;
+	color: #222;
 	}
 .single-post .entry-title, .page-title {
 	font-size: 21px;
@@ -796,8 +796,8 @@ li.author #reply {
 #comments li.author li.author, #comments li li.author li.author, #comments li.author li li.author {
 	}
 #comments li li.author, #comments li li.author li.author {
-	border-top: 1px solid #333;
-	border-bottom: 1px solid #333;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
 	}
 
 /* Comment links */
@@ -805,7 +805,7 @@ li.author #reply {
 	} 
 #comments li.author a, #comments li.author li.author a, #comments li.author li.author li.author a {
 	color: #A6C2CF;
-	border-color: #333;
+	border-color: #444;
 	}
 
 /* Avatar */
@@ -868,7 +868,7 @@ textarea {
 	font: .9em Cantarell, DejaVu Sans, Lucida Grande, Verdana, Arial, sans-serif;
 	font-weight: bold;
 	color: #fff;
-	background: #333;
+	background: #444;
 	border: none;
 	}
 li.entry-author .button, li.entry-author #submit {
