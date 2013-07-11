@@ -499,19 +499,16 @@ h1.post-title.entry-title {
 .byline {
 	margin-bottom: 10px;
 	font-size: .85em;
-	color: #333;
+	color: #57534a;
 	}
 .single .byline, .home .byline {
 	margin-bottom: 21px;
 	}
 .sticky .byline {
-	color: #333;
+	color: #57534a;
 	}
 .byline a {
-	color: #333;
-	border: solid #CCC;
-	border-style: groove;
-	border-width: 0 0 1px 0;
+	color: #57534a;
 	}
 
 /* Post meta data */
@@ -520,16 +517,14 @@ h1.post-title.entry-title {
 	display: block;
 	padding: 9px 0 0 0;
 	font-size: .85em;
-	color: #333;
+	color: #57534a;
 	border-top: 1px solid #CCC;
 	}
 .sticky .entry-meta {
-	color: black;
+	color: #57534a;
 	}
 .entry-meta a {
-	color: #333;
-	border: groove #CCC;
-	border-width: 0 0 1px 0;
+	color: #57534a;
 	}
 
 /* Page links */
