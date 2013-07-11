@@ -37,7 +37,7 @@
 body {
 	background: #F6F9FC url("images/hash.png") no-repeat fixed right bottom;
 	color: #444;
-	font: normal 87.5%/1.4 Cantarell, Ubuntu, Verdana, Arial, sans-serif;
+	font: normal 1em Cantarell, Ubuntu, Verdana, Arial, sans-serif;
 	}
 
 /* Body container */
