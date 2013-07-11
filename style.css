@@ -138,10 +138,8 @@ blockquote em {
 code {
 	padding: 1px 3px;
 	font-family: 'Ubuntu Mono', 'Droid Sans Mono', Consolas, Menlo, Monaco, monospace;
-	font-size: 1em;
-	color: #000;
+	font-size: 1.1em;
 	line-height: 1.3em;
-	background: none repeat scroll 0 0 #FFFFDD;
 	}
 pre {
 	overflow-x: hidden !important; overflow: hidden !important; position: relative; z-index: 999;
