@@ -31,13 +31,19 @@
 /* Uncomment the below line if using the Hybrid Tabs plugin */
 /* @import url('tabs.css'); */
 
+html {
+    /* default font size is 16px and 16 x 0.625 == 10px */
+    /* this lets us work in rem units, where 1.0rem == 10px */
+    font-size: 62.5%;
+}
+
 /**
 * Body
 ************************************************/
 body {
 	background: #F6F9FC url("images/hash.png") no-repeat fixed right bottom;
 	color: #444;
-	font: normal 1em Cantarell, Ubuntu, Verdana, Arial, sans-serif;
+	font: normal 1.4rem Cantarell, Ubuntu, Verdana, Arial, sans-serif;
 	}
 
 /* Body container */
@@ -61,20 +67,23 @@ a:hover, a:active {
 	}
 
 /* Headers */
+h1 {
+    font-size: 2.4rem;
+}
 h2 {
-	font-size: 1.5em;
+	font-size: 1.6rem;
 	}
 h3 {
 	font-size: 1.17em;
 	}
 h4 {
-	font-size: 16px;
+	font-size: 1.6rem;
 	}
 h5 {
-	font-size: 14px;
+	font-size: 1.4rem;
 	}
 h6 {
-	font-size: 12px;
+	font-size: 1.2rem;
 	}
 h1, h2, h3, h4, h5, h6 {
 	color: #222;
@@ -137,8 +146,8 @@ blockquote em {
 code {
 	padding: 1px 3px;
 	font-family: 'Ubuntu Mono', 'Droid Sans Mono', Consolas, Menlo, Monaco, monospace;
-	font-size: 1.1em;
 	line-height: 1.3em;
+    font-size: 1.4rem;
 	}
 pre {
 	overflow-x: hidden !important; overflow: hidden !important; position: relative; z-index: 999;
@@ -148,11 +157,12 @@ pre {
 	background: none repeat scroll 0 0 #ECF2F5;
 	color: #000;
     margin: 0 10px 10px 10px;
+    font-size: 1.4rem;
 	}
 pre code {
 	padding: 0;
 	border: 0;
-    font-size: 120%;
+    font-size: 1.4rem;
 	white-space: pre-wrap;
 	background: none;
 	}
@@ -171,7 +181,7 @@ table {
 	border: 1px solid #eee;
 	}
 caption {
-	font-size: .8em;
+	font-size: 1.2rem;
 	font-style: italic;
 	text-align: right;
 	color: #666;
@@ -217,7 +227,6 @@ td a, th a {
 	background: none repeat scroll 0 0 #DDFFDD;
 	border: 1px solid #BBDDBB;
 	line-height: 1.2em;
-/*	font-size: 0.9em;*/
 	margin: 15px auto;
 	text-align: justify;
 	}
@@ -350,7 +359,7 @@ img.wp-smiley {
     padding: 10px 15px !important;
 	}
 #site-title {
-	font-size: 2.3em !important;
+	font-size: 2.8rem !important;
 	margin-bottom: 9px;
 	line-height: 27px;
 	}
@@ -358,7 +367,7 @@ img.wp-smiley {
 	color: #222;
 	}
 #site-description {
-	font-size: 1.1em;
+	font-size: 1.4rem;
 	font-style: italic;
 	color: #444;
 	margin-bottom: 27px;
@@ -401,7 +410,7 @@ img.wp-smiley {
 #primary-menu li li {
 	}
 #primary-menu li li a {
-	font-size: 14px;
+	font-size: 1.4rem;
 	}
 #primary-menu li:hover ul {
 	top: 30px;
@@ -437,7 +446,7 @@ img.wp-smiley {
 * Posts
 ************************************************/
 h1.post-title.entry-title {
-	font-size: 150%;
+	font-size: 1.6rem;
 	margin-bottom: 5px;
 }
 .hentry {
@@ -481,13 +490,13 @@ h1.post-title.entry-title {
 
 /* Post title */
 .entry-title {
-	font-size: 21px;
+	font-size: 2.1rem;
 	}
 .entry-title a {
 	color: #222;
 	}
 .single-post .entry-title, .page-title {
-	font-size: 21px;
+	font-size: 2.1rem;
 	}
 .page-title, .attachment-title, .error-404-title {
 	margin-bottom: 21px;
@@ -496,7 +505,7 @@ h1.post-title.entry-title {
 /* Byline */
 .byline {
 	margin-bottom: 10px;
-	font-size: .85em;
+	font-size: 1.2rem;
 	color: #57534a;
 	}
 .single .byline, .home .byline {
@@ -514,7 +523,7 @@ h1.post-title.entry-title {
 	clear: both;
 	display: block;
 	padding: 9px 0 0 0;
-	font-size: .85em;
+	font-size: 1.2rem;
 	color: #57534a;
 	border-top: 1px solid #CCC;
 	}
@@ -538,7 +547,7 @@ p.page-links a {
 	}
 /* Series */
 .series-title {
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	}
 
 /* Page templates */
@@ -552,13 +561,13 @@ p.page-links a {
 	}
 .author-profile .author-name {
 	margin-bottom: 0;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: bold;
 	}
 
 /* Archive templates */
 .archive-title, .search-title {
-	font-size: 21px;
+	font-size: 2.1rem;
 	}
 .archive-info, .search-info {
 	overflow: hidden;
@@ -593,7 +602,7 @@ p.page-links a {
 /* Breadcrumb */
 .breadcrumb {
 	margin-bottom: 21px;
-	font-size: .85em;
+	font-size: .85rem;
 	color: #666;
 	}
 
@@ -604,7 +613,7 @@ p.page-links a {
 	}
 .next, .previous {
 	max-width: 50%;
-	font-size: .85em;
+	font-size: 1.4rem;
 	}
 .previous {
 	float: left;
@@ -673,7 +682,7 @@ p.page-links a {
 
 /* Widget title */
 .widget-title {
-	font-size: 1.2em;
+	font-size: 1.4rem;
 	}
 h3.widget-title {
 	font-family: Cantarell, Ubuntu, Verdana, Arial, sans-serif;
@@ -750,7 +759,7 @@ h3.widget-title {
 
 /* Comment headers */
 #comments-number, #reply {
-	font-size: 1.2em;
+	font-size: 1.4rem;
 	}
 li.author #reply {
 	color: #f7f7f7;
@@ -844,7 +853,7 @@ li.author #reply {
 	width: 300px;
 	}
 #comments-template label {
-	font-size: .8em;
+	font-size: 1.4rem;
 	}
 textarea {
 	clear: left;
@@ -885,7 +894,7 @@ li.entry-author .button, li.entry-author #submit {
 	}
 #footer {
 	clear: both;
-	font-size: 13px;
+	font-size: 1.3rem;
 	}
 #footer a {
 	font-style: italic;
